@@ -11,7 +11,7 @@ import (
 func main() {
 	for {
 		//llamar a tu script
-		go execCommand("sleep", []string{"5"})
+		go execCommand("ls", []string{"-l"})
 		time.Sleep(5 * time.Second)
 	}
 }
